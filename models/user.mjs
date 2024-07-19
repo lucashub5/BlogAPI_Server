@@ -22,8 +22,8 @@ const UserSchema = new Schema({
     },
     googleId: {
         type: String,
-        required: false,
         unique: true,
+        sparse: true
     },
     creationDate: {
         type: Date,

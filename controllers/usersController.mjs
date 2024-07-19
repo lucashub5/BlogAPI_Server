@@ -127,7 +127,7 @@ export const auth_google_callback_get = asyncHandler((req, res, next) => {
         return next(err);
       }
       const token = jwt.sign({ userId: user.id }, process.env.JWT_SECRET);
-      res.redirect(`http://localhost:5173/?token=${token}`);
+      res.redirect(`${process.env.CLIENT_URL}/?token=${token}`);
     });
   })(req, res, next);
 });
