@@ -9,7 +9,7 @@
     "devstart": "nodemon ./bin/www.mjs",
     "serverstart": "npm run devstart"
   },
-  "engines": { "node": "v20.10.0" },
+  "engines": { "node": "16.x" },
   "keywords": [],
   "author": "",
   "license": "ISC",
